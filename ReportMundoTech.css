@@ -1,0 +1,785 @@
+/*----------------------Página Principal---------------------*/
+/*--------------------------Gerais---------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Corpo1 {
+    height: 150vw;
+    background-color: rgb(38, 38, 38);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Nome {
+    color: goldenrod;
+    text-align: center;
+    padding: 2vw; 
+    background-color: rgb(45, 45, 45);
+    padding-left: 7.5vw;
+    font-size: 4.5vw;
+    padding-bottom: 3.2vw;
+}
+
+::-webkit-scrollbar {
+    width: 11px;
+    background-color: goldenrod;
+
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: black;
+}
+
+/*--------------------------IMAGENS----------------------------*/
+
+div .Banner {
+    max-width: 100%;
+    width: 1429px;
+    padding: 0;
+    box-shadow: 0 -0.6vw 0px goldenrod;
+    padding-bottom: 0.1vw;
+}
+
+.IMG-3 {
+    width: 19vw;
+    height: 19vw;
+}
+
+.IMGC-3 {
+    padding-left: 8.5vw;
+    padding-right: 8.6vw;
+    padding-top: 4vw;
+}
+
+.IMGC-1 {
+    padding-left: 3.5vw;
+    padding-right: 8.6vw;
+    padding-top: 4vw;
+}
+
+.IMG-1 {
+    width: 29vw;
+    height: 19vw;
+}
+
+.IMGC-5 {
+    padding-top:  1.5vw;
+    padding-left:  1.5vw;
+    padding-right: 1.5vw;
+    padding-bottom: 5px;
+    float: left;
+}
+
+.IMG-5 {
+    width: 40vw;
+    border: solid 0.6vw goldenrod;
+}
+
+.IMG-4 {
+    width: 16vw;
+}
+
+.IMGC-4 {
+    float: left;
+    padding-left: 14vw;
+    padding-top: 4vw;
+    margin: 0;
+}
+
+/*-----------------------MENU---------------------------*/
+
+nav.MenuGeral {
+    width: 6.3vw;
+    height: 100%;
+    background-color: black;
+    padding: 3.5vw 0 3.5vw;
+    box-shadow: 0.6vw 0 0 0 goldenrod;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: .5s;
+}
+
+.BotãoExpandir {
+    width: 100%;
+    padding-left: 0.8vw;
+}
+
+.BotãoExpandir>i {
+    color: goldenrod;
+    font-size: 1.7vw;
+    cursor: pointer;
+    padding-left: 1.1vw;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li.itens a {
+    color: goldenrod;
+    text-decoration: none;
+    font-size: 1.5vw;
+    padding: 1.5vw 4%;
+    display: flex;
+    line-height: 3vw;
+}
+
+ul li.itens a .txt-link {
+    transition: .5s;
+    opacity: 0;
+}
+
+ul li.itens a .icon>i {
+    font-size: 2.2vw;
+    margin-left: 1.5vw;
+}
+
+ul li.itens:hover {
+    background-color: rgb(25, 25, 25);
+}
+
+ul li.itens {
+    transition: 1s;
+}
+
+nav.MenuGeral.BotãoExpandir {
+    width: 24vw;
+}
+
+ul li.Ativo {
+    background-color: rgb(45, 45, 45);
+}
+
+nav.MenuGeral.BotãoExpandir .txt-link {
+    margin-left: 3vw;
+    opacity: 1;
+}
+
+/*----------------------Botões--------------------*/
+
+.BOTÃOC-1 {
+    padding-left: 41.4vw;
+    margin: 0 auto;
+    padding-bottom: 3vw;
+}
+
+.BOTÃO-1 {
+    background-color: black;
+    width: 22vw;
+    height: 3vw;
+    font-size: 1.5vw;
+    color: goldenrod;
+    border-radius: 1vw;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    box-shadow: 4px 4px 0 2px rgb(18, 18, 18);
+
+    transition: box-shadow 0.5s ease, transform 0.5s ease;
+}
+
+.BOTÃO-1:active {
+    box-shadow: 0 0 0 0 rgb(18, 18, 18), inset 3px 3px 0 2px rgb(18, 18, 18);
+    transform: translate(2px, 2px);
+}
+
+.BOTÃO-2 {
+    background-color: black;
+    width: 22vw;
+    height: 3vw;
+    font-size: 1.5vw;
+    color: goldenrod;
+    border-radius: 1vw;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    box-shadow: 4px 4px 0 2px rgb(18, 18, 18);
+
+    transition: box-shadow 0.5s ease, transform 0.5s ease;
+}
+
+.BOTÃO-2:active {
+    box-shadow: 0 0 0 0 rgb(18, 18, 18), inset 3px 3px 0 2px rgb(18, 18, 18);
+    transform: translate(2px, 2px);
+}
+
+.BOTÃOC-2 {
+    padding-left:  42vw;
+    margin: 0 auto;
+    padding-top: 2vw;
+    padding-bottom: 3vw;
+}
+
+/*----------------------SEÇÃO DE NOTÍCIAS------------------------*/
+
+.TEXTO-N1 {
+    color: goldenrod;
+    padding-top: 2vw;
+}
+
+.TEXTO-N2 {
+    font-size: 2.4vw;
+    text-align: center;
+}
+
+.TEXTO-N3 {
+    font-size: 1.6vw;
+    padding: 2.7vw;
+    text-align: justify;
+}
+
+.TEXTO-N4 {
+    color: goldenrod;
+    padding-top: 2vw;
+}
+
+.TEXTO-N5 {
+    font-size: 2.4vw;
+    text-align: center;
+}
+
+.TEXTO-N6 {
+    font-size:  1.42vw;
+    padding: 2.4vw;
+    text-align: justify;
+}
+
+.ElementoNotícias {
+    background-color: black;
+    width: 37vw;
+    height: 78vw;
+    border: solid 0.6vw goldenrod;
+    max-width: 100%;
+}
+
+.GrupoNotícias {
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-left: 6.5vw;
+    padding-bottom: 2vw;
+}
+
+.SeçãodeNotícias {
+    text-align: center;
+    padding: 2.6vw;
+    padding-left: 7.5vw;
+    color: goldenrod;
+    font-size: 3.0vw;
+    box-shadow: 0 -0.7vw 0px goldenrod;
+}
+
+/*-------------------------------SEÇÃO DE GAMES---------------------*/
+
+.SeçãodeGames {
+    text-align: center;
+    padding-top: 2.6vw;
+    padding-left: 7.5vw;
+    color: goldenrod;
+    font-size: 3.0vw;
+    box-shadow: 0px -0.6vw goldenrod;
+    padding-bottom: 2.6vw;
+}
+
+.GrupoGames {
+    display: flex;
+    flex-direction: column;
+    padding-left: 7.4vw;
+    align-items: center;
+}
+
+.ElementoGames {
+    background-color: black;
+    width: 75vw;
+    height: 54.5vw;
+    border: solid 0.6vw goldenrod;
+}
+
+.TEXTO-G1 {
+    color: goldenrod;
+}
+
+.TEXTO-G2 {
+    font-size: 2.5vw;
+    text-align: center;
+    padding-top: 2.5vw;
+    padding-right: 3.5vw;
+}
+
+.TEXTO-G3 {
+    font-size: 1.45vw;
+    padding: 2.5vw;
+    text-align: justify;
+    padding-left: 2.5vw;
+}
+
+/*------------------------------------Créditos---------------------------*/
+
+.GrupoCréditos {
+    text-align: right;
+    padding: 2vw;
+    color: goldenrod;
+    font-size: 2.5vw;
+    box-shadow: 0px -0.6vw goldenrod;
+    padding-top: 3.5vw;
+    padding-right: 9vw;
+    background-color: rgb(29, 29, 29);
+}
+
+.Créditostxt {
+    color: goldenrod;
+    font-size: 2vw;
+    text-align: right;
+    padding-right: 9vw;
+    padding-bottom: 2.5vw;
+    background-color: rgb(29, 29, 29);
+}
+
+/*--------------------------Página Notícias-------------------------*/
+
+#Corpo2 {
+    background-color: rgb(38, 38, 38);
+    height: 90vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Barra_De_Pesquisa {
+    top: 1.5vw;
+    position: absolute;
+    left: 15%;
+    height: 3.5vw;
+    background-color: goldenrod;
+    border-radius: 3.5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 4px 4px 0 2px rgb(0, 0, 0);
+}
+
+.CaixadePesquisa {
+    border: none;
+    background: none;
+    outline: none;
+    padding-left: 1.3vw;
+    color: black;
+    font-size: 1.1vw;
+    line-height: 3.5vw;
+    right: 2.5vw;
+}
+
+::-webkit-input-placeholder {
+    color: black;
+    font-weight: bold;
+}
+
+.IMGC-7 {
+    padding-top: 0.3vw;
+    padding-right: 1.6vw;
+}
+
+#IMG-7 {
+    width: 1.3vw;
+}
+
+.Menu_Notícias {
+    height: 8.5vw;
+    background-color: black;
+}
+
+.BOTÃO-3 {
+    height: 3.5vw;
+    background-color: goldenrod;
+    border-radius: 2.5vw;
+    width: 11vw;
+    font-size: 1.1vw;
+    border: none;
+    box-shadow: 4px 4px 0 2px rgb(0, 0, 0);
+    transition: box-shadow 0.5s ease, transform 0.5s ease;
+    cursor: pointer;
+}
+
+.BOTÃO-3:active {
+    box-shadow: 0 0 0 0 rgb(18, 18, 18), inset 3px 3px 0 rgb(18, 18, 18);
+    transform: translate(2px, 2px);
+}
+
+.BOTÃOC-3 {
+    position: absolute;
+    top: 1.5vw;
+    padding-left: 1.3vw;
+}
+
+.Menu_Notíciastxt {
+    color: goldenrod;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    padding-top: 1.8vw;
+    font-size: 3.5vw;
+}
+
+.TXT-1 {
+    box-shadow: 0 -0.6vw  goldenrod;
+    padding-top: 2vw;
+    color: goldenrod;
+    font-size: 3.5vw;
+}
+
+.IMGC-8 {
+    box-shadow: 0 -1.0vw 0px goldenrod;
+    padding-bottom: 0.3vw;
+}
+
+.img-8 {
+    max-width: 100%;
+    width: 1429px;
+}
+
+.GrupoRecentes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 2.3vw;
+    padding-bottom: 3vw;
+}
+
+.ElementoRecentes {
+    width: 28vw;
+    height: 65vw;
+    background-color: black;
+    border: solid 0.6vw goldenrod;
+}
+
+.TXT-2 {
+    box-shadow: 0 -0.6vw goldenrod;
+    padding-top: 2.5vw;
+    color: goldenrod;
+    font-size: 3.5vw;
+}
+
+.GrupoPassadas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 2.5vw;
+    padding-bottom: 3vw;
+}
+
+.ElementoPassadas {
+    width: 28vw;
+    height: 65vw;
+    background-color: black;
+    border: solid 0.6vw goldenrod;
+}
+
+.Créditos-1 {
+    background-color: rgb(29, 29, 29);
+}
+
+.IMGC-9 {
+    text-align: center;
+    padding-left: 1vw;
+    background-color: rgb(29, 29, 29);
+    padding-bottom: 1vw;
+}
+
+.IMG-9 {
+    width: 15vw;
+}
+
+.BOTÃO-4 {
+    height: 3.5vw;
+    background-color: goldenrod;
+    border-radius: 3.5vw;
+    width: 16vw;
+    font-size: 1.1vw;
+    border: none;
+    box-shadow: 4px 4px 0 2px rgb(0, 0, 0);
+    transition: box-shadow 0.5s ease, transform 0.5s ease;
+    cursor: pointer;
+}
+
+.BOTÃOC-4 {
+    padding-left: 2.5vw;
+    padding-top: 1.5vw;
+}
+
+.BOTÃO-4:active {
+    box-shadow: 0 0 0 0 rgb(18, 18, 18), inset 3px 3px 0 rgb(18, 18, 18);
+    transform: translate(2px, 2px);
+}
+
+.BOTÃOC-5{
+    padding-left:63vw;
+    padding-top: 1.5vw;
+    float: left;
+    padding-right: 2.4vw;
+}
+
+.BOTÃO-5{
+    height: 3.5vw;
+    background-color: goldenrod;
+    border-radius: 3.5vw;
+    width: 16vw;
+    font-size: 1.1vw;
+    border: none;
+    box-shadow: 4px 4px 0 2px rgb(0, 0, 0);
+    transition: box-shadow 0.5s ease, transform 0.5s ease;
+    cursor: pointer;
+}
+
+.BOTÃO-5:active {
+    box-shadow: 0 0 0 0 rgb(18, 18, 18), inset 3px 3px 0 rgb(18, 18, 18);
+    transform: translate(2px, 2px);
+}
+
+.Interação{
+    background-color:  rgb(38, 38, 38);
+    position: sticky;
+    box-shadow: 0 0.6vw 0 goldenrod, 0 -0.6vw 0 goldenrod;
+    padding-bottom: 2vw;
+}
+
+.IMGC-10{
+    padding-left: 6.3vw;
+    padding-top: 3.5vw;
+}
+
+.TEXTO-M2{
+    color: goldenrod;
+    font-size: 2.0vw;
+    text-align: center;
+    padding-top: 1vw;
+}
+
+.img-10{
+    height: 14.5vw;
+}
+
+.TEXTO-M3{
+    color: goldenrod;
+    text-align: justify;
+    padding: 1.7vw;
+    font-size: 1.35vw;
+}
+
+.img-11{
+    height: 14.5vw;
+}
+
+.IMGC-11{
+    padding-top: 3.5vw;  
+}
+
+.TEXTO-M5{
+    color: goldenrod;
+    text-align: center;
+    font-size: 1.8vw ;
+    padding-top: 1vw;
+}
+
+.TEXTO-M6{
+    color: goldenrod;
+    text-align: justify;
+    padding: 1.7vw;
+    font-size: 1.19vw;
+}
+
+.img-12{
+    width: 18vw;
+}
+
+.IMGC-12{
+    text-align: center;
+    padding: 2.7vw;
+}
+
+.TEXTO-M8{
+    color: goldenrod;
+    text-align: center;
+    font-size: 1.7vw;
+}
+
+.TEXTO-M9{
+    color: goldenrod;
+    text-align: justify;
+    padding: 1.5vw;
+    font-size: 1.17vw;
+}
+
+.img-13{
+   width: 14.7vw;
+}
+
+.IMGC-13{
+    text-align: center;
+    padding-top: 1.5vw;
+}
+
+.TEXTO-M11{
+    color: goldenrod;
+    text-align: center;
+    font-size: 1.4vw ;
+    padding-left:1vw ; 
+    padding-right: 1vw;
+}
+
+.TEXTO-M12{
+    color: goldenrod;
+    text-align: justify;
+    padding: 1.3vw;
+    font-size: 1.24vw;
+}
+
+.img-14{
+    height: 11.2vw;
+}
+
+.IMGC-14{
+ text-align: center;
+ padding-top: 2.5vw;
+}
+
+.TEXTO-M14{
+    color: goldenrod;
+    text-align: center;
+    font-size: 1.6vw;
+    padding-top: 1.5vw;
+}
+
+.TEXTO-M15{
+    color: goldenrod;
+    text-align: justify;
+    padding: 1.5vw;
+    font-size: 1.25vw;
+}
+
+.img-15{
+    width: 14.5vw;
+}
+
+.IMGC-15{
+    text-align: center;
+    padding-top: 1.5vw;
+}
+
+.TEXTO-M17{
+    color: goldenrod;
+    text-align: center;
+    font-size: 1.59vw;
+    padding-top: 1vw;
+}
+
+.TEXTO-M18{
+    color: goldenrod;
+    text-align: justify;
+    padding: 1.5vw;
+    font-size: 1.21vw;
+}
+
+.Créditostxt-1{
+        color: goldenrod;
+        font-size: 1.7vw;
+        text-align: center;
+        padding-top: 2vw;
+        padding-bottom: 2vw;
+}
+
+.GrupoCréditos-1{
+    text-align: center;
+    color: goldenrod;
+    font-size: 3.1vw;
+    box-shadow: 0px -0.6vw goldenrod;
+    padding-top: 3.5vw;
+}
+
+.TXT-3{
+    position: absolute;
+    left: 24.5vw;
+    color: goldenrod;
+    font-size: 3.44vw;
+    top: 1.6vw;
+}
+
+.Classe-Es{
+ box-shadow: 0.6vw goldenrod, -0.6vw goldenrod;
+}
+
+#Menu_Notíciastxt{
+    color: goldenrod;
+    position: absolute;
+    padding-left: 41vw;
+    padding-top: 1.6vw;
+    font-size: 3.3vw;
+}
+
+/*-----------------------Página Games-------------------------------*/
+
+.Corpo2{
+    margin: 0;
+    background-color: rgb(38, 38, 38);
+    height: 150vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Font{
+    font-size: 1.5vw;
+}
+
+.IMG-16{
+    width: 1429px;
+    max-width: 100%;
+    box-shadow: 0 0.6vw goldenrod;
+}
+
+.TXT3-1{
+    color: goldenrod;
+    text-align: center;
+    font-size: 1.55vw;
+}
+
+.GrupoGames-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1.57vw;
+}
+
+#SLA{
+    padding-top: 6.5vw;
+}
+
+.img-e{
+    width: 35vw;
+    border: solid goldenrod 0.6vw;
+}
+
+.IMGC-E{
+float: right;
+padding-top: 2.5vw;
+    padding-left:2.5vw;
+    padding-right: 2.5vw;
+    padding-bottom: 0.2vw;
+}
+
+.TEXTO-G4{
+    font-size: 2.5vw;
+    text-align: center;
+    padding-top: 2.5vw;
+}
+
+#abc{
+    font-size: 1.6vw;
+}
+#ol{
+    padding-bottom: 1.5vw;
+}
+
+#y {
+    padding-bottom: 6vw;
+}
